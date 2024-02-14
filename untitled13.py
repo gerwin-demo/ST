@@ -16,7 +16,7 @@ from PIL import Image
 import os
 
 # Get the absolute path to the file
-file_path = os.path.join(os.getcwd(), "pyfile.pk")
+file_path = os.path.join(os.getcwd(), "pyfile.pkl")
 
 # Load the trained model
 with open(file_path, "rb") as f:
