@@ -13,8 +13,15 @@ import numpy as np
 from PIL import Image
 
 # Load the trained model
-with open("trained_model(1).pkl", "rb") as f:
+import os
+
+# Get the absolute path to the file
+file_path = os.path.join(os.getcwd(), "trained_model(1).pk")
+
+# Load the trained model
+with open(file_path, "rb") as f:
     model = pickle.load(f)
+
 
 # Define a function to perform style transfer
 def style_transfer(content_image):
