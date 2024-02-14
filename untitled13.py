@@ -13,7 +13,7 @@ import numpy as np
 from PIL import Image
 
 # Load the trained model
-with open("trained_model(1).pkl", "rb'") as f:
+with open("trained_model(1).pkl", "rb") as f:
     model = pickle.load(f)
 
 # Define a function to perform style transfer
